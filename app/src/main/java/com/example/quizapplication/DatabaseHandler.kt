@@ -12,24 +12,19 @@ class DatabaseHandler private constructor(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {
-        // Database Information
         const val DATABASE_NAME = "QuizApplicationDatabase"
         const val DATABASE_VERSION = 3
 
-        // Table names
         const val TABLE_USERS = "Users"
 
-        // User properties
         const val KEY_USERID = "user_id"
         const val KEY_USERNAME = "username"
         const val KEY_USER_PASSWORD = "password"
         const val KEY_USER_EMAIL = "email"
         const val KEY_USER_SCORE = "score"
 
-        // Making class singleton
         var databaseHandler: DatabaseHandler? = null     // Database handler object
 
-        // Factory method for database handler object
         @Synchronized
         fun getInstance(context: Context): DatabaseHandler? {
             if (databaseHandler == null) databaseHandler =
@@ -39,7 +34,6 @@ class DatabaseHandler private constructor(context: Context) :
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        // create tables
         val createUserTable = "CREATE TABLE $TABLE_USERS(" +
                 "$KEY_USERID INTEGER PRIMARY KEY, " +
                 "$KEY_USERNAME TEXT NOT NULL," +
@@ -62,14 +56,13 @@ class DatabaseHandler private constructor(context: Context) :
         try {
             db.beginTransaction()
 
-            // check if user is already registered (Username and email)
             var cursor = db.rawQuery(
                 "SELECT * FROM $TABLE_USERS WHERE ($KEY_USERNAME = ?)",
                 arrayOf(user.username)
             )
             if (cursor.moveToFirst()) {
                 cursor.close()
-                return -1  // username already taken
+                return -1
             }
 
             cursor = db.rawQuery(
@@ -78,7 +71,7 @@ class DatabaseHandler private constructor(context: Context) :
             )
             if (cursor.moveToFirst()) {
                 cursor.close()
-                return -2 // Email already registered
+                return -2
             }
             cursor.close()
 
@@ -90,12 +83,12 @@ class DatabaseHandler private constructor(context: Context) :
             db.insertOrThrow(TABLE_USERS, null, record)
             db.setTransactionSuccessful()
         } catch (ex: SQLiteException) {
-            return -3  // exception
+            return -3
         } finally {
             db.endTransaction()
             db.close()
         }
-        return 1 // user is added
+        return 1
     }
 
     fun loginUser(user: User): Long {
@@ -105,14 +98,13 @@ class DatabaseHandler private constructor(context: Context) :
             db.beginTransaction()
             val cursor =
                 if (user.email != "email") {
-                    // If email is not set to its default value then it must had been set by the user.
-                    // Hence, the user is trying to login through email.
+
                     db.rawQuery(
                         "SELECT $KEY_USERID FROM $TABLE_USERS WHERE ($KEY_USER_EMAIL = ?) and ($KEY_USER_PASSWORD = ?)",
                         arrayOf(user.email, user.password)
                     )
                 } else {
-                    // Else user is trying to login through username.
+
                     db.rawQuery(
                         "SELECT $KEY_USERID FROM $TABLE_USERS WHERE ($KEY_USERNAME = ?) and ($KEY_USER_PASSWORD = ?)",
                         arrayOf(user.username, user.password)
@@ -133,7 +125,6 @@ class DatabaseHandler private constructor(context: Context) :
         return userid
     }
 
-    // Used to get all details of a particular user.
     fun getUser(userid: Long): User? {
         var user: User? = null
         val db = readableDatabase
