@@ -1,0 +1,366 @@
+{
+  "aptitude": [
+    {
+      "ques_id": 1,
+      "question": "Which one of the following is not true?",
+      "option1": "A class containing abstract methods is called an abstract class.",
+      "option2": "Abstract methods should be implemented in the derived class.",
+      "option3": "An abstract class cannot have non-abstract methods.",
+      "option4": "A class must be qualified as ‘abstract’ class, if it contains one abstract method.",
+      "answer": 3
+    },
+    {
+      "ques_id": 2,
+      "question": "The fields in an interface are implicitly specified as",
+      "option1": "static only",
+      "option2": "protected",
+      "option3": "private",
+      "option4": "both static and final",
+      "answer": 4
+    },
+    {
+      "ques_id": 3,
+      "question": "An overloaded method consists of",
+      "option1": "The same method name with different types of parameters",
+      "option2": "The same method name with different number of parameters",
+      "option3": "The same method name and same number and type of parameters with different return type",
+      "option4": "Both (1) and (2) above",
+      "answer": 4
+    },
+    {
+      "ques_id": 4,
+      "question": "A protected member can be accessed in",
+      "option1": "a subclass of the same package",
+      "option2": "a non-subclass of the same package",
+      "option3": "a non-subclass of different package",
+      "option4": "a subclass of different package",
+      "answer": 3
+    },
+    {
+      "ques_id": 5,
+      "question": "Mark the incorrect statement from the following:",
+      "option1": "Java is a fully object oriented language with strong support for proper software engineering techniques",
+      "option2": "In java it is not easy to write C-like so called procedural programs",
+      "option3": "In java language objects have to be manipulated",
+      "option4": "In java language error processing is built into the language",
+      "answer": 4
+    },
+    {
+      "ques_id": 6,
+      "question": "Number of primitive data types in Java are?",
+      "option1": "7",
+      "option2": "4",
+      "option3": "8",
+      "option4": "10",
+      "answer": 3
+    },
+    {
+      "ques_id": 7,
+      "question": "What is the size of float and double in java?",
+      "option1": "32 and 64",
+      "option2": "64 and 32",
+      "option3": "32 and 32",
+      "option4": "64 and 64",
+      "answer": 1
+    },
+    {
+      "ques_id": 8,
+      "question": "When an array is passed to a method, what does the method receive?",
+      "option1": "A reference of the array",
+      "option2": "A copy of the array",
+      "option3": "First element of the array",
+      "option4": "All the above",
+      "answer": 1
+    },
+    {
+      "ques_id": 9,
+      "question": "Arrays in java are?",
+      "option1": "Object references",
+      "option2": "Primitives",
+      "option3": "Objects",
+      "option4": "None of the above",
+      "answer": 3
+    },
+    {
+      "ques_id": 10,
+      "question": "When is the object created with new keyword?",
+      "option1": "At compile time",
+      "option2": "it depends",
+      "option3": "at run time",
+      "option4": "Other",
+      "answer": 3
+    },
+    {
+      "ques_id": 11,
+      "question": "Identify the corrected definition of a package",
+      "option1": "A collection of editing tools",
+      "option2": "A collection of classes",
+      "option3": "A collection of classes and interfaces",
+      "option4": "A collection of interfaces",
+      "answer": 3
+    },
+    {
+      "ques_id": 12,
+      "question": "Identify the keyword among the following that makes a variable belong to a class,rather than being defined for each instance of the class.",
+      "option1": "final",
+      "option2": "static",
+      "option3": "volatile",
+      "option4": "abstract",
+      "answer": 2
+    },
+    {
+      "ques_id": 13,
+      "question": "In which of the following classes is toString() method defined?",
+      "option1": "java.lang.Object",
+      "option2": "java.lang.String",
+      "option3": "java.lang.util",
+      "option4": "None of the above",
+      "answer": 1
+    },
+    {
+      "ques_id": 14,
+      "question": "compareTo() returns",
+      "option1": "int",
+      "option2": "true",
+      "option3": "false",
+      "option4": "None of the above",
+      "answer": 1
+    },
+    {
+      "ques_id": 15,
+      "question": "To which of the following does the class string belong",
+      "option1": "java.lang",
+      "option2": "java.awt",
+      "option3": "java.applet",
+      "option4": "java.string",
+      "answer": 1
+    },
+    {
+      "ques_id": 16,
+      "question": "Identify the return type of a method that does not return any value.",
+      "option1": "int",
+      "option2": "double",
+      "option3": "String",
+      "option4": "void",
+      "answer": 4
+    },
+    {
+      "ques_id": 17,
+      "question": "Where does the JVM store parameters and local variables whenever a method is invoked?",
+      "option1": "Array",
+      "option2": "Heap",
+      "option3": "Stack",
+      "option4": "Tree",
+      "answer": 3
+    },
+    {
+      "ques_id": 18,
+      "question": "Which feature allows removing the risk of occurrence of NullPointerException in real time?",
+      "option1": "Null Risk",
+      "option2": "Null Safety",
+      "option3": "Null Pointer",
+      "option4": "All the above",
+      "answer": 2
+    },
+    {
+      "ques_id": 19,
+      "question": "What is the variables declared in a class for the use of all methods of the class called?",
+      "option1": "Reference variables",
+      "option2": "Instance variables",
+      "option3": "Objects",
+      "option4": "none",
+      "answer": 2
+    },
+    {
+      "ques_id": 20,
+      "question": "What is the implicit return type of constructor?",
+      "option1": "No return type",
+      "option2": "A class object in which it is defined",
+      "option3": "void",
+      "option4": "None of the above",
+      "answer": 2
+    }
+  ],
+  "reasoning": [
+    {
+      "ques_id": 1,
+      "question": "Kotlin was developed by?",
+      "option1": "IBM",
+      "option2": "NetBeans",
+      "option3": "JetBrains",
+      "option4": "Oracle",
+      "answer": 3
+    },
+    {
+      "ques_id": 2,
+      "question": "Kotlin is a statically-typed programming language which runs on the?",
+      "option1": "JCM",
+      "option2": "JVM",
+      "option3": "JPM",
+      "option4": "JDM",
+      "answer": 2
+    },
+    {
+      "ques_id": 3,
+      "question": "Which feature allows removing the risk of occurrence of NullPointerException in real time?",
+      "option1": "Null Risk",
+      "option2": "Null Safety",
+      "option3": "Null Pointer",
+      "option4": "All the above",
+      "answer": 2
+    },
+    {
+      "ques_id": 4,
+      "question": "Kotlin is interoperable with Java because it uses JVM bytecode.",
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Can be Yes or No",
+      "option4": "Can't say",
+      "answer": 1
+    },
+    {
+      "ques_id": 5,
+      "question": "What is the use of data class in Kotlin?",
+      "option1": "extract the basic data types",
+      "option2": "delete the basic data types",
+      "option3": "present the basic data types",
+      "option4": "holds the basic data types",
+      "answer": 4
+    },
+    {
+      "ques_id": 6,
+      "question": "Does Kotlin use the static key word?",
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Yes and No",
+      "option4": "Can't say",
+      "answer": 2
+    },
+    {
+      "ques_id": 7,
+      "question": "What handles Null Exceptions in Kotlin?",
+      "option1": "Sealed Classes",
+      "option2": "Lambda Expressions",
+      "option3": "The Kotlin extension",
+      "option4": "Elvis Operator",
+      "answer": 4
+    },
+    {
+      "ques_id": 8,
+      "question": "How do you get the length of a string, str in Kotlin?",
+      "option1": "str.length",
+      "option2": "str.length()",
+      "option3": "lengthOf(str)",
+      "option4": "All the above",
+      "answer": 1
+    },
+    {
+      "ques_id": 9,
+      "question": "Kotlin language name came from the Kotlin Island of Russia",
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Can be Yes or No",
+      "option4": "Can't say",
+      "answer": 1
+    },
+    {
+      "ques_id": 10,
+      "question": "What is the use of data class in Kotlin?",
+      "option1": "extract the basic data types",
+      "option2": "delete the basic data types",
+      "option3": "present the basic data types",
+      "option4": "holds the basic data types",
+      "answer": 4
+    },
+    {
+      "ques_id": 11,
+      "question": "The function to print a line in Kotlin is:",
+      "option1": "println",
+      "option2": "PrintLine",
+      "option3": "print()",
+      "option4": "option (1) and (3)",
+      "answer": 4
+    },
+    {
+      "ques_id": 12,
+      "question": "In Kotlin, the default visibility modifier is?",
+      "option1": "sealed",
+      "option2": "public",
+      "option3": "protected",
+      "option4": "private",
+      "answer": 2
+    },
+    {
+      "ques_id": 13,
+      "question": "An overloaded method consists of",
+      "option1": "The same method name with different types of parameters",
+      "option2": "The same method name with different number of parameters",
+      "option3": "The same method name and same number and type of parameters with different return type",
+      "option4": "Both (a) and (b) above",
+      "answer": 4
+    },
+    {
+      "ques_id": 14,
+      "question": "Does Kotlin support OOP and Procedural programming?",
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "Yes and No",
+      "option4": "Can't say",
+      "answer": 1
+    },
+    {
+      "ques_id": 15,
+      "question": "The default behavior of classes in Kotlin is?",
+      "option1": "Java is a fully object oriented language with strong support for proper software engineering techniques",
+      "option2": "In java it is not easy to write C-like so called procedural programs",
+      "option3": "In java language objects have to be manipulated",
+      "option4": "In java language error processing is built into the language",
+      "answer": 4
+    },
+    {
+      "ques_id": 16,
+      "question": "Kotlin was developed by?",
+      "option1": "All classes are protected",
+      "option2": "All classes are sealed",
+      "option3": "All classes are final",
+      "option4": "All classes are public",
+      "answer": 3
+    },
+    {
+      "ques_id": 17,
+      "question": "Which are the basic data types in Kotlin?",
+      "option1": "Arrays and Booleans",
+      "option2": "Characters",
+      "option3": "Strings and Numbers",
+      "option4": "All the above",
+      "answer": 4
+    },
+    {
+      "ques_id": 18,
+      "question": "Which feature allows removing the risk of occurrence of NullPointerException in real time?",
+      "option1": "Null Risk",
+      "option2": "Null Safety",
+      "option3": "Null Pointer",
+      "option4": "All the above",
+      "answer": 2
+    },
+    {
+      "ques_id": 19,
+      "question": "Which of these features are available in Kotlin but not in Java?",
+      "option1": "Operator Overloading",
+      "option2": "Coroutines and Null Safety",
+      "option3": "Range Expressions",
+      "option4": "All the above",
+      "answer": 4
+    },
+    {
+      "ques_id": 20,
+      "question": "Can a val variable be changed once assigned?",
+      "option1": "It can be changed but only once",
+      "option2": "It can be changed",
+      "option3": "It can't be changed at all",
+      "option4": "All the above",
+      "answer": 3
+    }
+  ]
+}
